@@ -32,9 +32,9 @@ while attempts > 0 :
     print("attempts left:",attempts)
     guess = int(input("take a guess"))
     if int(guess) > int(secret_word):
-        print("too high")
+        print("The number is higher than :",guess)
     if int(guess) < int(secret_word):
-        print("too low")
+        print("The number is lower than :",guess)
 #attempt minusing
     if int(guess) != int(secret_word):
         attempts -= 1
@@ -43,3 +43,4 @@ while attempts > 0 :
     if attempts == 0 :
         print("you are out of attempts :()")
         print("Game Over")
+        
